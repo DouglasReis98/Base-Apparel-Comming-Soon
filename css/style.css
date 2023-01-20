@@ -10,13 +10,131 @@ body {
     background-color: hsl(0, 100%, 98%);
 }
 
-@media {
+nav {
+    width: 100%;
+    height: 5em;
+    position: absolute;
+}
+
+nav img {
+    width: 6em;
+    margin: 2em 0 2em 2em;
+}
+
+#img {
+    background-image: url(../images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 40%;
+    float: right;
+}
+
+#container {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+#text {
+    width: 27rem;
+    height: fit-content;
+    text-align: left;
+    padding: 0;
+}
+
+#text h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+
+#text h1:nth-child(1) {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+#text h1:nth-child(2) {
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+#text p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3em 0 3em 0;
+    color: hsl(0, 36%, 70%);
+}
+
+#fieldEmail {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 5em;
+}
+
+#fieldEmail input + span{
+    position: absolute;
+    right: 4em;
+    top: .6em;
+    color: hsl(0, 93%, 68%);
+    font-size: 1.5em;
+}
+
+#email {
+    width: 80%;
+    height: .5em;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 1.5em;
+    border: .5px solid hsl(0, 32%, 86%);
+    outline: none;
+
+}
+
+#email::placeholder {
+    color: hsl(0, 32%, 86%);
+}
+
+#submit {
+    padding: .2em;
+    color: white;
+    font-size: 2em;
+    border-radius: 50px;
+    width: 2.5em;
+    height: 1.5em;
+    border: none;
+    font-weight: 100;
+    right: 0;
+    position: absolute;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 2px 5px hsl(0, 36%, 70%);
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-image: none;
+    background-color: hsl(0, 100%, 90%);
+    box-shadow: 0px 4px 10px hsl(0, 36%, 70%);
+}
+
+
+#text h5{
+    color: hsl(0, 74%, 74%);
+    margin: 1em 0 0 1.5em;
+}
+
+@media screen and (max-width: 375px) {
     nav {
         width: 100%;
         height: 5em;
-
+        position: relative;
     }
-    nav img{
+
+    nav img {
         width: 6em;
         margin: 2em 0 2em 2em;
     }
@@ -27,68 +145,63 @@ body {
         background-size: cover;
         height: 15em;
         width: 100%;
+        float: none;
+    }
 
+    #container {
+        display: block;        
+        width: 100%;
+        float: none;
     }
 
     #text {
         height: fit-content;
-        width: 100%;
         text-align: center;
         padding: 5em 0 5em 0;
+        width: 100%;
     }
 
-    #text h1{
+    #text h1 {
         text-transform: uppercase;
         font-size: 3em;
         letter-spacing: 10px;
     }
 
-    #text h1:nth-child(1){
+    #text h1:nth-child(1) {
         font-weight: 300;
         color: hsl(0, 36%, 70%);
     }
 
-    #text h1:nth-child(2){
+    #text h1:nth-child(2) {
         font-weight: 600;
         color: hsl(0, 6%, 24%);
     }
 
-    #text p{
+    #text p {
         font-size: 16px;
         font-weight: 400;
         padding: 3em 2em 3em 2em;
         color: hsl(0, 36%, 70%);
     }
 
-    #fieldEmail{
-
+    #fieldEmail input + span{
+        right: 4.5em;
     }
 
-    #email{
-        width: 23em;
+    #email {
+        width: 20em;
+        height: .5em;
+    }
+
+    #submit {
+        width: 2em;
         height: 1.5em;
-        border-radius: 30px;
-        background-color:transparent;
-        padding: 1.5em;
-        border: .5px solid hsl(0, 32%, 86%);
-        outline: none;
-
+        right: 1em;
     }
 
-    #email::placeholder{
-        color: hsl(0, 32%, 86%);
-    }
-
-    #submit{
-        padding: .5em;
-        color: white;
-        font-size: 2em;
-        border-radius: 50px;
-        width: 2.5em;
-        border: none;
-        font-weight: 100;
-        right: 30px;
-        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    #text h5{
+        text-align: left;
+        margin: 1em 0 0 4.3em;
     }
 
 }
