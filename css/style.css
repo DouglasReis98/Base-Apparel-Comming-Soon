@@ -44,12 +44,14 @@ nav img {
     height: fit-content;
     text-align: left;
     padding: 0;
+    margin-top: 5em;
 }
 
 #text h1 {
     text-transform: uppercase;
-    font-size: 3em;
-    letter-spacing: 10px;
+    font-size: 3.5em;
+    letter-spacing: .2em;
+    line-height: 1em;
 }
 
 #text h1:nth-child(1) {
@@ -67,6 +69,7 @@ nav img {
     font-weight: 400;
     padding: 3em 0 3em 0;
     color: hsl(0, 36%, 70%);
+    line-height: 1.5em;
 }
 
 #fieldEmail {
@@ -159,6 +162,7 @@ nav img {
         text-align: center;
         padding: 5em 0 5em 0;
         width: 100%;
+        margin-top: 0;
     }
 
     #text h1 {
