@@ -18,7 +18,7 @@ frm.addEventListener("submit", (e) => {
         answer.style.color = ""
         answer.innerText = "This field can't be empty"
         inputEmail.style.borderColor = "hsl(0, 93%, 68%)"
-        iconError.innerHTML = `<i class="fa-sharp fa-solid fa-circle-exclamation"></i>`
+        iconError.innerHTML = `<img src="images/icon-error.svg">`
     }
     else {
         answer.style.color = ""

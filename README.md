@@ -40,8 +40,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- [Font Awesome](https://fontawesome.com) - Icons
+- Flex
 
 ### What I learned
 
