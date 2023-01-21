@@ -3,6 +3,7 @@ let inputEmail = document.getElementById("email");
 let answer = document.getElementById("answer")
 let body = document.querySelector("body")
 let iconError = document.querySelector("span")
+
 frm.addEventListener("submit", (e) => {
     e.preventDefault();
 
