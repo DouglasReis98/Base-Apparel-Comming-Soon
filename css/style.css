@@ -199,14 +199,14 @@ nav img {
     }
 
     #email {
-        width: 80%;
+        width: 75%;
         height: .5em;
     }
 
     #submit {
         width: 2em;
         height: 1.5em;
-        right: 0;
+        right: 0.5em;
     }
 
     #text h5{
