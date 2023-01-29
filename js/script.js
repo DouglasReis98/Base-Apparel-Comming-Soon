@@ -24,7 +24,7 @@ frm.addEventListener("submit", (e) => {
         answer.style.color = ""
         answer.innerText = "Please provide a valid email"
         inputEmail.style.borderColor = "hsl(0, 93%, 68%)"
-        iconError.innerHTML = `<i class="fa-sharp fa-solid fa-circle-exclamation"></i>`
+        iconError.innerHTML = `<img src="images/icon-error.svg">`
     }
 })
 
