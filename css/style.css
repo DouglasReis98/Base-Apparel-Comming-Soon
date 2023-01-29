@@ -82,7 +82,7 @@ nav img {
 
 #fieldEmail input + span{
     position: absolute;
-    right: 4em;
+    right: 4.5em;
     top: .6em;
     color: hsl(0, 93%, 68%);
     font-size: 1.5em;
@@ -195,7 +195,7 @@ nav img {
     }
 
     #fieldEmail input + span{
-        right: 4.5em;
+        right: 4em;
     }
 
     #email {
